@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GILO FURNITURE | Handcrafted Rattan Chairs & Expert Repairs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            espresso: '#2C1E16',
+            rattan: '#C89B63',
+            rattanDark: '#A87C44',
+            cream: '#FAF6F0',
+            sand: '#EFE7DC',
+            olive: '#3A4D39',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes marqueeScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 34s linear infinite;
+    }
+    .marquee-wrapper:hover .marquee-track {
+      animation-play-state: paused;
+      cursor:pointer;
+    }
+
+    .chair-card {
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+      cursor:pointer;
+    }
+    .chair-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px -10px rgba(44, 30, 22, 0.16);
+      cursor:pointer;
+    }
+    .chair-card img {
+      transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+      cursor:pointer;
+    }
+    .chair-card:hover img {
+      transform: scale(1.08);
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body class="bg-cream text-espresso font-sans antialiased">
+
+  <!-- ===================================================================== -->
+  <!-- NAVIGATION BAR WITH CUSTOM RATTAN CHAIR LOGO                          -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur-md border-b border-rattan/25">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-xl bg-espresso flex items-center justify-center shadow-md group-hover:bg-rattanDark transition-colors">
+          <svg class="w-8 h-8 text-rattan group-hover:text-cream transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 34C14 18 22 8 32 8C42 8 50 18 50 34" />
+            <path d="M19 34C19 22 25 14 32 14C39 14 45 22 45 34" stroke-dasharray="3 3" />
+            <line x1="32" y1="8" x2="32" y2="34" />
+            <line x1="23" y1="11" x2="26" y2="34" />
+            <line x1="41" y1="11" x2="38" y2="34" />
+            <path d="M12 34H52C52 38 48 41 43 41H21C16 41 12 38 12 34Z" fill="currentColor" fill-opacity="0.2" />
+            <path d="M21 41L16 56" />
+            <path d="M43 41L48 56" />
+            <path d="M18 50H46" />
+          </svg>
+        </div>
+        <div>
+          <span class="block font-serif text-2xl font-bold tracking-wide text-espresso leading-none">GILO FURNITURE</span>
+          <span class="block text-[11px] uppercase tracking-[0.22em] text-rattanDark font-semibold mt-1">Authentic Rattan & Repairs</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#collection" class="hover:text-rattanDark transition-colors">Rattan & Furniture</a>
+        <a href="#repairs" class="hover:text-rattanDark transition-colors">Chair Repairs</a>
+        <a href="#contact" class="hover:text-rattanDark transition-colors">Contact Us</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/256756595526?text=Hello%20GILO%20FURNITURE!%20I%20would%20like%20to%20inquire%20about%20your%20rattan%20chairs."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-olive hover:bg-espresso text-white text-sm font-semibold px-4 py-2.5 rounded-full shadow-sm transition-all">
+          <span>WhatsApp: 0756595526</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- HERO SECTION                                                          -->
+  <!-- ===================================================================== -->
+  <section class="relative overflow-hidden py-14 lg:py-20 bg-gradient-to-b from-sand/70 to-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-rattan/20 text-espresso text-xs font-bold uppercase tracking-wider">
+          Honest Workshop Prices • No Fake Markups
+        </span>
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-espresso leading-[1.1]">
+          Hand-Woven Rattan Chairs Built for Comfort & Lasting Beauty.
+        </h1>
+        <p class="text-base sm:text-lg text-espresso/80 max-w-2xl leading-relaxed">
+          At <strong>GILO FURNITURE</strong>, we craft brand-new rattan chairs and restore worn-out favorites at fair, transparent workshop prices—not fake inflated prices.
+        </p>
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="#collection"
+             class="px-7 py-3.5 rounded-full bg-espresso hover:bg-rattanDark text-cream font-semibold text-sm shadow-md transition-all">
+            Browse Collection
+          </a>
+          <a href="https://wa.me/256756595526?text=Hello%20GILO%20FURNITURE!%20I%20want%20to%20order%20or%20ask%20about%20a%20rattan%20chair."
+             target="_blank" rel="noopener noreferrer"
+             class="px-7 py-3.5 rounded-full bg-olive hover:bg-espresso text-white font-semibold text-sm shadow-md transition-all">
+            Chat / Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5">
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-sand aspect-[4/3] flex items-center justify-center">
+          <img src="images/add-3.jpg"
+               alt="GILO FURNITURE Woven Brown Rattan Round Set"
+               class="w-full h-full object-cover" />
+          <div class="absolute bottom-4 left-4 right-4 bg-espresso/90 backdrop-blur-sm text-cream p-4 rounded-2xl flex items-center justify-between">
+            <div>
+              <p class="text-xs text-rattan uppercase tracking-wider font-semibold">Direct Workshop Deals</p>
+              <p class="font-serif text-lg font-bold">New Rattan & Expert Weaving Repair</p>
+            </div>
+            <a href="https://wa.me/256756595526?text=Hello%20GILO%20FURNITURE!%20Please%20share%20your%20latest%20rattan%20chair%20prices."
+               target="_blank" rel="noopener noreferrer"
+               class="px-4 py-2 rounded-full bg-rattan text-espresso font-bold text-xs hover:bg-cream transition-colors">
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- AUTO-SCROLLING RATTAN SHOWCASE MARQUEE                                -->
+  <!-- ===================================================================== -->
+  <section aria-label="Rattan Showcase Gallery" class="py-6 bg-espresso text-cream overflow-hidden border-y border-rattan/30">
+    <div class="marquee-wrapper">
+      <div id="rattan-marquee-track" class="marquee-track gap-6 px-3"></div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- RATTAN & FURNITURE COLLECTION                                         -->
+  <!-- ===================================================================== -->
+  <section id="collection" class="py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-rattanDark">Mixed Showcase</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso mt-1">Rattan Chairs & Custom Pieces</h2>
+      </div>
+      <p class="text-sm text-espresso/75 max-w-md">
+        Featuring background-upgraded rattan sets alongside original workshop photos. Tap <strong>Order on WhatsApp</strong> to message <strong>0756595526</strong>.
+      </p>
+    </div>
+
+    <div id="chairs-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- RATTAN CHAIR REPAIR & RESTORATION SECTION                             -->
+  <!-- ===================================================================== -->
+  <section id="repairs" class="py-16 lg:py-24 bg-sand/80 border-y border-rattan/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-6 space-y-5">
+        <span class="inline-block px-3 py-1 rounded-full bg-espresso text-rattan text-xs font-bold uppercase tracking-wider">
+          Chair Repair & Re-Weaving
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso">
+          Broken Rattan or Loose Frame? We Restore Chairs Like New.
+        </h2>
+        <p class="text-espresso/80 leading-relaxed">
+          We specialize in tight natural cane re-weaving, frame reinforcement, sanding, and fresh varnish finishes at honest, affordable prices.
+        </p>
+        <ul class="space-y-3 text-sm font-medium text-espresso/90">
+          <li class="flex items-center gap-2.5">
+            <span class="w-5 h-5 rounded-full bg-olive text-white flex items-center justify-center text-xs">✓</span>
+            Full rattan seat & backrest re-weaving
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="w-5 h-5 rounded-full bg-olive text-white flex items-center justify-center text-xs">✓</span>
+            Structural joint tightening, polishing & protective varnish
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="w-5 h-5 rounded-full bg-olive text-white flex items-center justify-center text-xs">✓</span>
+            Send a photo on WhatsApp for an instant, fair repair quote
+          </li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-rattan/20">
+        <h3 class="font-serif text-2xl font-bold text-espresso mb-2">Request a Repair Quote on WhatsApp</h3>
+        <p class="text-sm text-espresso/70 mb-6">Fill in quick details below and send directly to our WhatsApp (0756595526).</p>
+        <form id="repair-whatsapp-form" class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-espresso/80 mb-1">Your Name</label>
+            <input type="text" id="repair-name" required placeholder="e.g., Sarah"
+                   class="w-full px-4 py-3 rounded-xl border border-rattan/30 bg-cream/50 focus:outline-none focus:border-espresso text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-espresso/80 mb-1">Chair Type & Repair Needed</label>
+            <textarea id="repair-details" rows="3" required placeholder="e.g., 2 rattan dining chairs need seat re-weaving and varnish..."
+                      class="w-full px-4 py-3 rounded-xl border border-rattan/30 bg-cream/50 focus:outline-none focus:border-espresso text-sm"></textarea>
+          </div>
+          <button type="submit"
+                  class="w-full py-3.5 rounded-full bg-olive hover:bg-espresso text-white font-semibold text-sm shadow-md transition-all">
+            Send Repair Request on WhatsApp →
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- FOOTER & DIRECT WHATSAPP CONTACT                                      -->
+  <!-- ===================================================================== -->
+  <footer id="contact" class="bg-espresso text-cream pt-14 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-cream/15">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-rattan/20 flex items-center justify-center">
+          <svg class="w-7 h-7 text-rattan" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 34C14 18 22 8 32 8C42 8 50 18 50 34" />
+            <path d="M12 34H52C52 38 48 41 43 41H21C16 41 12 38 12 34Z" />
+            <path d="M21 41L16 56M43 41L48 56M18 50H46" />
+          </svg>
+        </div>
+        <div>
+          <span class="block font-serif text-2xl font-bold tracking-wide">GILO FURNITURE</span>
+          <span class="block text-xs text-rattan">New Rattan Chairs & Expert Chair Repairs</span>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-4">
+        <a href="https://wa.me/256756595526?text=Hello%20GILO%20FURNITURE!%20I%20am%20contacting%20you%20from%20your%20website."
+           target="_blank" rel="noopener noreferrer"
+           class="px-6 py-3 rounded-full bg-olive hover:bg-rattan hover:text-espresso text-white font-semibold text-sm transition-colors">
+          WhatsApp Direct: 0756595526
+        </a>
+        <a href="https://wa.me/256756595526?text=Hello%20GILO%20FURNITURE!%20Please%20call%20or%20chat%20with%20me%20about%20rattan%20chairs."
+           target="_blank" rel="noopener noreferrer"
+           class="px-6 py-3 rounded-full border border-rattan/50 hover:bg-rattan hover:text-espresso text-cream font-semibold text-sm transition-colors">
+          Message on WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 flex flex-col sm:flex-row justify-between text-xs text-cream/60 gap-2">
+      <p>© 2026 GILO FURNITURE. All rights reserved.</p>
+      <p>WhatsApp Line: 0756595526</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/256756595526?text=Hello%20GILO%20FURNITURE!%20I%20would%20like%20to%20order%20a%20rattan%20chair."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Chat with GILO FURNITURE on WhatsApp"
+     class="fixed bottom-5 right-5 z-50 flex items-center gap-2.5 bg-olive hover:bg-espresso text-white font-semibold text-sm px-5 py-3.5 rounded-full shadow-2xl border-2 border-white transition-transform hover:scale-105">
+    <span class="w-2.5 h-2.5 rounded-full bg-green-300 animate-ping"></span>
+    <span>WhatsApp 0756595526</span>
+  </a>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT: MIXED ENHANCED + ORIGINAL IMAGES, PRICES & TAGS           -->
+  <!-- ===================================================================== -->
+  <script>
+    const WHATSAPP_NUMBER = "256756595526";
+
+    // =========================================================================
+    // EASY EDIT SECTION: CHANGE PRICES, TAGS & IMAGES HERE ANYTIME!
+    // Mix of background-enhanced rattan images and your original photos.
+    // =========================================================================
+    const GILO_CHAIRS = [
+      {
+        name: "Curved Rattan Patio Set (Enhanced)",
+        price: "UGX 850,000",                                        // <-- CHANGE PRICE HERE
+        tag: "New in stock",                                        // <-- CHANGE TAG HERE
+        image: "images/add-24.jpg",                       // <-- ENHANCED IMAGE
+        description: "Woven brown rattan round table and four curved chairs on a bright sunlit patio."
+      },
+      {
+        name: "Rattan Dining Set ",
+        price: "UGX 1,800,000",                                        // <-- CHANGE PRICE HERE
+        tag: "Original ",                                        // <-- CHANGE TAG HERE
+        image: "images/add-35.jpeg", // <-- ORIGINAL IMAGE
+        description: "Woven brown rattan family chair."
+      },
+      {
+        name: "BIG Seater Rattan Dining Set",
+        price: "UGX 4,000,000",                                        // <-- CHANGE PRICE HERE
+        tag: "Honest Price",                                          // <-- CHANGE TAG HERE
+        image: "images/add-23.png",                      // <-- ENHANCED IMAGE
+        description: "White and black woven rattan dining chairs and table."
+      },
+      {
+        name: "Hanging Rattan Egg Swing (Enhanced for new look)",
+        price: "UGX 900,000",                                        // <-- CHANGE PRICE HERE
+        tag: "Featured",                                              // <-- CHANGE TAG HERE
+        image: "images/add-28.jpg",                         // <-- ENHANCED IMAGE
+        description: "Woven brown rattan hanging egg swing chair with orange cushion and stand."
+      },
+      {
+        name: "KING & QUEENZ BED (CLEAN)",
+        price: "UGX 940,000",                                        // <-- CHANGE PRICE HERE
+        tag: "Fresh Look",                                            // <-- CHANGE TAG HERE
+        image: "images/add-58.jpeg",                        // <-- ENHANCED IMAGE
+        description: "In all bed colors you like available."
+      },
+      {
+        name: "Upholstered Bed  (Original)",
+        price: "UGX 700,000",                                        // <-- CHANGE PRICE HERE
+        tag: "Original",                                        // <-- CHANGE TAG HERE
+        image: "images/add-22.jpeg",         // <-- ORIGINAL IMAGE
+        description: "Panelled upholstered bed  crafted at the workshop."
+      },
+      {
+        name: "Glass Dressing mirror (Original Photo)",
+        price: "UGX 640,000",                                        // <-- CHANGE PRICE HERE
+        tag: "Original",                                        // <-- CHANGE TAG HERE
+        image: "images/add-20.jpg",         // <-- ORIGINAL IMAGE
+        description: "Tall  with glass up and warm wood trim."
+      },
+      {
+        name: "CLOSET (Coffe & Gray)",
+        price: "UGX 700,000",                                        // <-- CHANGE PRICE HERE
+        tag: "Original",                                        // <-- CHANGE TAG HERE
+        image: "images/add-7.jpeg",         // <-- ORIGINAL IMAGE
+        description: "Wares and belongings are sef in thi clean closet."
+      },
+      {
+        name: "Wooden Wardrobe (Original Photo)",
+        price: "UGX 770,000",                                        // <-- CHANGE PRICE HERE
+        tag: "Original Photo",                                        // <-- CHANGE TAG HERE
+        image: "images/add-38.jpeg",                        // <-- ORIGINAL IMAGE
+        description: "Three-door varnished wooden wardrobe with central open shelf."
+      }
+      
+    ];
+    // =========================================================================
+
+    function buildWhatsAppLink(message) {
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    }
+
+    const grid = document.getElementById("chairs-grid");
+    const marqueeTrack = document.getElementById("rattan-marquee-track");
+
+    GILO_CHAIRS.forEach((chair) => {
+      const orderMessage = `Hello GILO FURNITURE! I want to order: *${chair.name}* (${chair.price}). Is it available?`;
+      const waUrl = buildWhatsAppLink(orderMessage);
+
+      const card = document.createElement("article");
+      card.className = "chair-card bg-white rounded-3xl overflow-hidden border border-rattan/20 flex flex-col";
+      card.innerHTML = `
+        <div class="relative aspect-[4/3] bg-sand overflow-hidden">
+          <img src="${chair.image}"
+               alt="${chair.name}"
+               class="w-full h-full object-cover" />
+          <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-espresso/90 text-rattan text-xs font-bold tracking-wide">
+            ${chair.tag}
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="font-serif text-2xl font-bold text-espresso">${chair.name}</h3>
+            <p class="text-lg font-bold text-rattanDark mt-1">${chair.price}</p>
+            <p class="text-sm text-espresso/75 mt-2.5 leading-relaxed">${chair.description}</p>
+          </div>
+          <div class="pt-5 mt-5 border-t border-rattan/15">
+            <a href="${waUrl}"
+               target="_blank" rel="noopener noreferrer"
+               class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-olive hover:bg-espresso text-white font-semibold text-sm transition-colors">
+              <span>Order on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+
+    const marqueeItems = [...GILO_CHAIRS, ...GILO_CHAIRS];
+    marqueeItems.forEach((chair) => {
+      const item = document.createElement("a");
+      item.href = buildWhatsAppLink(`Hello GILO FURNITURE! I saw "${chair.name}" (${chair.price}) in your showcase and want to ask about it.`);
+      item.target = "_blank";
+      item.rel = "noopener noreferrer";
+      item.className = "flex items-center gap-3 bg-cream/10 hover:bg-cream/20 px-3 py-2 rounded-2xl transition-colors shrink-0";
+      item.innerHTML = `
+        <img src="${chair.image}"
+             alt="${chair.name}"
+             class="w-12 h-12 rounded-xl object-cover border border-rattan/40" />
+        <div class="pr-2">
+          <p class="text-xs font-bold text-cream">${chair.name}</p>
+          <p class="text-xs text-rattan font-semibold">${chair.price}</p>
+        </div>
+      `;
+      marqueeTrack.appendChild(item);
+    });
+
+    document.getElementById("repair-whatsapp-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("repair-name").value.trim();
+      const details = document.getElementById("repair-details").value.trim();
+      const msg = `Hello GILO FURNITURE! My name is ${name}. I need a chair repair quote:\n${details}`;
+      window.open(buildWhatsAppLink(msg), "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>
